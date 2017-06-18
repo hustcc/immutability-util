@@ -1,0 +1,82 @@
+{
+  "name": "immutability-util",
+  "version": "0.0.4",
+  "description": "Mutate a copy of data without changing the original source. Inspired by immutability-helper.",
+  "main": "dist/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "l": "cross-env NODE_ENV=production babel src -d dist && node l.js",
+    "lint": "eslint src",
+    "test": "npm run lint && npm run cover",
+    "cover": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "build": "cross-env NODE_ENV=production babel src -d dist && npm run test",
+    "benchmark": "node benchmark/device.js && node benchmark/all_test.js && node benchmark/simple_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hustcc/immutability-util.git"
+  },
+  "keywords": [
+    "immutability",
+    "immutability-helper",
+    "immutability-util",
+    "react",
+    "redux"
+  ],
+  "author": "hustcc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hustcc/immutability-util/issues"
+  },
+  "homepage": "https://github.com/hustcc/immutability-util",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "benchmark": "^2.1.4",
+    "coveralls": "^2.13.1",
+    "cross-env": "^5.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "immutability-helper": "^2.2.2",
+    "jest": "^20.0.4",
+    "word-table": "^1.0.2"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/index)\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+  }
+}
