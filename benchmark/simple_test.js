@@ -8,6 +8,7 @@ var suite = new Benchmark.Suite();
 
 var iu = require('../');
 var ImmutabilityHelper = require('immutability-helper');
+var ImmutabilityHelperX = require('immutability-helper-x');
 
 var obj = {
   a: 1,
@@ -30,7 +31,7 @@ var obj = {
 
 suite
   // code for ImmutabilityUtil
-  .add('ImmutabilityUtil chain $apply', function () {
+  .add('ImmutabilityUtil $apply', function () {
     iu(obj)
       .$apply(['a'], v => v + 1)
       .value()
@@ -43,6 +44,12 @@ suite
         $apply: v => v + 1,
       },
     });
+  })
+  .add('ImmutabilityHelperX $apply', function () {
+    ImmutabilityHelperX.updateChain(obj)
+      .$apply(['a'], v => v + 1)
+      .value()
+
   })
   .on('cycle', function (e) {
     console.log('' + e.target);
