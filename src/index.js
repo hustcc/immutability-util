@@ -17,7 +17,7 @@
  * Only save the path array and value, and copy the data when calling `value()` API.
  * Only do data copy once on the node, will get much more performance.
  *
- **/
+ */
 
 const invariant = require('./invariant.js');
 

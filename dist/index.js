@@ -23,7 +23,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * Only save the path array and value, and copy the data when calling `value()` API.
  * Only do data copy once on the node, will get much more performance.
  *
- **/
+ */
 
 var invariant = require('./invariant.js');
 
