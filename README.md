@@ -2,7 +2,7 @@
 
 > Mutate a copy of data without changing the original source. Inspired by [kolodny/immutability-helper](https://github.com/kolodny/immutability-helper) / [ProtoTeam/immutability-helper-x](https://github.com/ProtoTeam/immutability-helper-x) and rewrite with ES6 syntax for **convenient API** and **higher performance**.
 
-[![Build Status](https://travis-ci.org/hustcc/immutability-util.svg?branch=master)](https://travis-ci.org/hustcc/immutability-util) [![Coverage Status](https://coveralls.io/repos/github/hustcc/immutability-util/badge.svg?branch=master)](https://coveralls.io/github/hustcc/immutability-util?branch=master) [![npm](https://img.shields.io/npm/v/immutability-util.svg)](https://www.npmjs.com/package/immutability-util) [![npm download](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/immutability-util)
+[![Build Status](https://travis-ci.org/hustcc/immutability-util.svg?branch=master)](https://travis-ci.org/hustcc/immutability-util) [![Coverage Status](https://coveralls.io/repos/github/hustcc/immutability-util/badge.svg?branch=master)](https://coveralls.io/github/hustcc/immutability-util?branch=master) [![npm](https://img.shields.io/npm/v/immutability-util.svg)](https://www.npmjs.com/package/immutability-util) [![npm download](https://img.shields.io/npm/dm/immutability-util.svg)](https://www.npmjs.com/package/immutability-util)
 
 
 ## 1. Features
